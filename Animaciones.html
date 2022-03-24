@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANIMACIONES</title> <!-- Titulo de la pagina web -->
+	<link rel="stylesheet" type="text/css" href="Css/Estilos.css"> <!-- Etiqueta link para relacionar con la hoja de estilo (css) -->
+	<link rel="shortcut icon" href="Imagenes/logo-julian.png"> <!--Etiqueta link rel con la propiedad icon para el icono de la pagina web-->
+</head>
+
+
+
+<body>
+
+	<header> <!--Encabezado de la pagina -->
+
+	<h1><center>APLICACIONES WEB l</center></h1> <!-- Titulo dentro del encabezado -->
+
+	<img src="Imagenes/universo.gif"> <!-- Etiqueta para añadir una imagen al encabezado de la pagina -->
+
+	</header>
+
+	<nav> <!--Etiqueta nav para la navegacion del usuario -->
+
+	<ul>
+		    <li> <a  href="Index.html">INICIO</a></li>
+			<li> <a  href="Tablas.html">TABLAS</a></li>
+			<li> <a  href="Formularios.html">FORMULARIOS</a> </li>
+			<li> <a  href="Bordes.html">BORDES</a></li>
+
+			<li> <a  href="Videos.html">VIDEOS</a>
+				<ul>
+					<li> <a  href="Animaciones.html">ANIMACIONES</a></li>
+				</ul>
+
+			</li>
+
+		</ul>
+
+	</nav>
+
+
+	<section>
+
+		<h3 id="Subtitulo"><center>ANIMACIÓN</center></h3>
+
+		<ul>
+			<li>
+				De una manera parecida a las transiciones, pero con una mayor potencialidad, en HTML5 tenemos a nuestra disposición las animaciones (animation).Para empezar con algo sencillo, primero vamos a hacer paso a paso que el martillo (creado en SVG) 
+				y que ya hemos utilizado en otros temas- gire al colocar el cursor encima.
+			</li>
+
+			<br>
+			<br>
+
+			<div id="animacion">
+			<h3><center>PASO A PASO</center></h3>
+			</div>
+
+
+			<ol>
+				<li>
+					<b>Creamos el objeto a animar</b>
+				</li>
+				<br>
+
+
+			<ul>
+				<li>
+					Primero, creamos dentro de un <"div"> el objeto, imagen o texto que realizará la animación (en este caso, el martillo).
+                    Así, dentro de la página html, creamos un <"div"> llamado martillo y dentro creamos un dibujo SVG del martillo que rotará.
+				</li>
+
+			</ul>
+
+			<img src="Imagenes/codigo.png" id="img4">
+			<br>
+
+				<li>
+					<b>Establecemos la animación</b>
+				</li>
+				<br>
+
+				<ul>
+					<li>
+						Seguidamente, en el código CSS, vamos a incluir dos cosas.
+                        Por una parte, en el selector del <"div"> donde está el martillo, indicamos qué animación tendrá que reproducir, indicando un nombre y la duración de la animación expresada en segundos (entre otras propiedades opcionales que a continuación veremos).
+					</li>
+
+					<br>
+
+					<img src="Imagenes/ka.png" id="img4">
+
+					<br>
+
+					<li>
+						El nombre de la animación (animación_martillo) y la duración (2s) son valores obligatorios, pero existen valores opcionales que nos permiten personalizar la animación, como son:
+                        animation-timing-function : Define el tipo de (easing) aceleración que tendrá la animación.
+                        linear: la velocidad es siempre la misma durante toda la animación.
+                        ease: la animación comienza lenta, después rápida y acaba lento.
+                        ease-in: (aceleración) la animación empieza lenta y va acelerándose progresivamente.
+                        ease-out: (deceleración) la animación empieza rápida y va decelerando progresivamente.
+                        ease-in-out: la animación empieza y acaba lenta y en el recorrido central va rápida.
+
+                        animation-iteration-count: Indica el número de veces que se repetirá la animación.
+                        infinite: la animación se repite indefinidamente.
+                        número de repeticiones: se repite el número de veces indicado (por defecto es 1).
+
+                        animation-direction: Establece la dirección de la animación.
+                        normal: la animación se reproduce siempre tal y como la hemos definido.
+                        alternate: primero se reproduce en la dirección definida y posteriormente al revés (y así sucesivamente).
+
+                        animation-delay: Indica si existe retardo (o tiempo de espera) para que se inicie la animación.
+                        número de segundos de espera: El número de segundos seguido de "s".
+					</li>
+				</ul>
+				<br>
+
+				<li>
+					<b>Definimos cómo será la alineación</b>
+				</li>
+				<br>
+
+				<ul>
+					<li>
+						Igualmente, dentro del mismo código CSS, definimos en qué consistirá dicha animación, indicando el nombre 'animacion_martillo', que hemos creado en el paso anterior.
+						Toda la animación se puede dividir en tantos pasos como sea necesario, aunque lo mínimo son 2: inicio (0%) y final (100%).
+
+                        En este ejemplo se han incluido 3 pasos. En el inicio de la animación (0%) se empieza con una rotación del <"div"> martillo de 0 grados (0deg), en la mitad de la animación (50%), el <"div"> martillo tendrá una rotación de 90 grados (rotará hacia la derecha) y cuando la animación finalice (100%), el martillo volverá a su rotación inicial.
+					</li>
+				</ul>
+
+				<img src="Imagenes/imgfi.png" id="img4">
+
+			</ol>
+
+			</ul>
+
+
+			<h3 id="Subtitulo"><center>EJEMPLO PRACTICO</center></h3>
+
+
+		  <div id="martillo" align="center">
+          <svg width="120" height="190" xmlns="http://www.w3.org/2000/svg")>
+          <rect x="43" y="10" width="14" height="160" rx="6" ry="5" fill="#895111"/>
+          <rect x="43" y="10" width="14" height="160" rx="6" ry="5" fill="#895111"/>
+          <rect x="45" y="15" width="4" height="150" rx="6" ry="6" fill="#A68661"/>
+          <rect x="10" y="22" width="80" height="45" rx="14" ry="12" fill="#6E6E5F"/>
+          <rect x="20" y="37" width="62" height="24" rx="6" ry="6" fill="#898982"/>
+          <rect x="20" y="25" width="62" height="6" rx="4" ry="4" fill="#C2C2B6"/>
+          <rect x="43" y="67" width="14" height="9" fill="#482907"/>
+          </svg>
+          </div>
+
+	</section>
+
+
+	<footer>
+
+		 <a href="https://web.whatsapp.com/"> <img id="img3" src="Imagenes/whatsap.png" align="center"> </a>
+		 <a href="https://www.facebook.com/"> <img id="img3" src="Imagenes/faceboock.png" align="center">
+
+
+	<a  href="https://www.google.com/intl/es-419/gmail/about/">  Contactenos: jbolanos@unimayor.edu.co <br>
+	        
+        </a> Telefono: 01800324178 
+
+        <br>
+                 © 2022 Aplicaciones-web-1.com <br>
+                   Popayan-Cauca
+
+
+
+     </footer>
+
+
+</body>
+</html>

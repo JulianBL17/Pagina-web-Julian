@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORMULARIOS</title>
+	<link rel="stylesheet" type="text/css" href="Css/Estilos.css"> <!-- Etiqueta link para relacionar con la hoja de estilo (css) -->
+	<link rel="shortcut icon" href="Imagenes/logo-julian.png"> <!--Etiqueta link rel con la propiedad icon para el icono de la pagina web-->
+
+</head>
+
+
+<body>
+
+	<header> <!--Encabezado de la pagina -->
+
+	<h1><center>APLICACIONES WEB l</center></h1> <!-- Titulo dentro del encabezado -->
+
+	<img src="Imagenes/universo.gif"> <!-- Etiqueta para añadir una imagen al encabezado de la pagina -->
+
+
+	</header>
+
+
+	<nav> <!--Etiqueta nav para la navegacion del usuario -->
+
+	<ul>
+		    <li> <a  href="Index.html">INICIO</a></li>
+			<li> <a  href="Tablas.html">TABLAS</a></li>
+			<li> <a  href="Formularios.html">FORMULARIOS</a> </li>
+			<li> <a  href="Bordes.html">BORDES</a></li>
+
+			<li> <a  href="Videos.html">VIDEOS</a>
+				<ul>
+					<li> <a  href="Animaciones.html">ANIMACIONES</a>
+					</li>
+				</ul>
+
+			</li>
+ 
+	</nav>
+
+
+
+	<section>
+
+		<h3 id="Subtitulo"><center>FORMULARIOS</center></h3>
+
+         <ul>
+
+		 
+		 	<li>
+			Los formularios de HTML5 (<"form">) incorporan nuevos tipos de datos (<"input">) (fechas, colores, direcciones de correo electrónico, rangos, etc..) y la autovalidación de datos sin javaScript. Al mismo tiempo vamos a ver todas las propiedades y eventos CSS3 (como [required] o :invalid) que permiten configurar cualquier elemento o respuesta de autovalidación de un formulario.
+			</li>
+			<br>
+
+			<li>
+				Los formularios fueron una de las primeras mejoras que se dieron a conocer de HTML5 y de las que más revuelo causaron, sobre todo por su gran capacidad de autovalidación de una manera extremadamente fácil y sin necesidad de utilizar JavaScript.
+			</li>
+			<br>
+
+			</ul>
+
+			<div>
+
+			<center><h4>FORMULARIO UTILIZANDO LA ETIQUETA "TABLE"</h4></center>
+
+		   </div>
+
+		
+		<form id="ordenarformulario">
+			
+			<table border="5" align="center" bordercolor="#407585">
+
+                <tr>
+                    <th colspan="2">REGISTRO</th>
+                </tr>
+
+                <tr>
+                    <th>NOMBRE</th>
+                    <td><input type="text" name="Usuario"></td>
+                </tr>
+
+                <tr>
+                    <th>APELLIDO</th>
+                    <td><input type="text" name="Contraseña"></td>
+                </tr>
+                
+                
+                <tr>
+                    <th>GENERO</th> 
+                    <td>Masculino <input type="radio" name="sexo" value="M">
+                        Femenino <input type="radio" name="sexo" value="F">
+
+                    
+                    
+                    </td>
+                </tr>
+
+
+              
+                <tr>
+                    <th>QUE LE GUSTA</th>
+                    <td>Deportes <input type="checkbox" name="opcion" value="deporte"> 
+                        Programar <input type="checkbox" name="opcion" value="deportes" checked> 
+                        Novelas <input type="checkbox" name="opcion" value="deportes"> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>IDIOMAS</th>
+                    <td><select name="idioma" id="">
+                    <option value="Español">Español</option>    
+                    <option value="Lenguas Ñeras">Lenguas ñeras</option>
+                    <option value="Mandarin"> Mandarin</option>
+                    <option value="Lenguas muertas"> Lenguas muertas</option>
+
+                    </select> 
+
+                </td>
+                </tr>
+
+                <tr>
+                    <th>E-mail</th>
+                    <td><input type="E-mail" name="Email" title="Escribe tu correo electronico...." placeholder="Usuario@gmail.com" required > </td>
+                </tr>
+
+                <tr>
+                    <th>FECHA:</th>
+                    <td><input type="Date" name="fecha"> </td>
+                </tr>
+
+                <tr>
+                    <th>VALOR PAGINA</th>
+                    <td> <input type="range" min="1" max="7" value="2" step="1" title="Necesitamos saber...." name="adicion"> </td>
+                </tr>
+
+                <tr>
+                	<th>COLOR FAVORITO</th>
+                	<td><input type="color" name="color"></td>
+                </tr>
+
+                <tr>
+                	<th>CALIFICACION PAGINA</th>
+                	<td><input type="number" min="1" max="10" title="Necesitamos saber.../>"</td>
+                </tr>
+
+
+                
+                <tr>
+                    <th colspan="5"> <input type="submit" name="REGISTRAR" value="REGISTRAR" id="boton" ></th>
+                </tr>
+
+            </table>
+
+        </form>
+
+        <br>
+
+
+
+            
+                	<div>
+                		<center><h4>FORMULARIO UTILIZANDO LA ETIQUETA "FIELDSET"</h4></center>
+                	</div>  
+      
+		</form>
+
+		<br>
+
+
+		<form id="form2">
+			 <fieldset >
+				<legend>Datos personales</legend>
+				Nombre: <input type="text" name="nombre" size="38" placeholder="Su nombre"title="Dijite su nombre">
+				<br>
+				Correo electrónico: <input type="email" name="mail" size="28" title="Dijite su correo electrónico" 
+				placeholder="nombre@servidor.com"required autocomplete>
+				<br>
+				Telefono: <input type="Telefono" name="Telefono" size="20" title="Dijite su telefono" required>
+
+
+			</fieldset>
+			
+
+			<fieldset>
+				<legend>Datos Empleado</legend>
+				Breve descripción de su experiencia laboral:<br>
+				<textarea name="descripcion"></textarea><p>
+				Experiencia en :<br>
+				<input type="radio" name="proceso"  checked/> .Net
+				<input type="radio" name="proceso" value="enplanificacion"/> Java
+				<input type="radio" name="proceso" value="enejecucion"/> Phyton
+				<input type="radio" name="proceso" value="finalizado"/> C#<p>
+				Aspiracion Salarial (en $):  
+				<input type="number" name="presupuesto" min="500000" max="4000000">
+				<br>
+			     <center><input id="boton" type="submit" name="ENVIAR" value="ENVIAR"></center>	
+			</fieldset>
+		</form>
+
+	</section>
+
+	<br>
+	<br>
+
+
+	<footer>
+
+		 <a href="https://web.whatsapp.com/"> <img id="img3" src="Imagenes/whatsap.png" align="center"> </a>
+		 <a href="https://www.facebook.com/"> <img id="img3" src="Imagenes/faceboock.png" align="center">
+
+
+	<a  href="https://www.google.com/intl/es-419/gmail/about/">  Contactenos: jbolanos@unimayor.edu.co
+	        
+        </a> Telefono: 01800324178 
+
+        <br>
+                 © 2022 Aplicaciones-web-1.com <br>
+                   Popayan-Cauca
+
+
+
+     </footer>
+
+
+</body>
+</html>

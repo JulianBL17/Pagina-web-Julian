@@ -1,0 +1,210 @@
+#tabla{
+	
+	background-color: white;
+	border-color: red;
+}
+
+nav li{
+   
+	display: inline-block; 
+	width: 150px;
+	height: 40px;
+	padding: 5px 10px;
+    background-color:#337C93;
+	border: 3px solid #E2BE29;
+	text-align: center;
+	position:relative;
+}
+
+nav li:hover{
+	background:linear-gradient(#337C93,#7B68EE,#F3F781);
+	color: #000;
+}
+
+nav li>ul{
+	display: none;
+}
+
+nav li:hover>ul{
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+
+li a{
+	text-decoration-line: none;
+	color:white;
+}
+
+img{
+   width: 1329px;
+   height: 200px;
+}
+
+
+#img2{
+	width: 400px;
+	height: 220px;
+	text-align: left;
+	border-radius:30px;
+
+}
+
+#img3{
+
+	width: 90px;
+	height: 60px;
+	padding: 30px,40px;
+}
+
+#img4{
+	width: 400px;
+	height: 300px;
+	padding: 40px,40px;
+	padding-left: 500px;
+
+}
+
+
+#Subtitulo{
+	background:linear-gradient(#337C93,#7B68EE,#F3F781);
+	font-size: 39px;
+}
+
+#ordenarformulario{
+	padding-left: 30px;
+}
+
+#boton{
+	border-color: black;
+	background-color: #7B68EE;
+}
+
+#form2{
+	width: 40%;
+	padding-left: 420px;
+}
+
+
+
+div{
+ text-shadow: 0 0 2px red;
+
+}
+
+#borde1{
+	width: 200px;
+	height: 220px;
+	text-align: left;
+    border-width:10px;
+    border-style:dotted;
+    border-color:blue;
+   
+}
+#borde2{
+	width: 200px;
+	height: 220px;
+	text-align: left;
+    border-width:10px;
+    border-style: solid;
+    border-color: orange; 
+}
+
+#borde3{
+	width: 200px;
+	height: 220px;
+	text-align: left;
+    border-width:10px;
+    border-style: dashed;
+    border-color: red; 
+}
+
+#borde4{
+	width: 200px;
+	height: 220px;
+	text-align: left;
+    border-width:10px;
+    border-style: inset;
+    border-color: yellow;
+    border-right-color: blue;
+    border-bottom-color: #00FF00; 
+}
+
+#borde5{
+	width: 200px;
+	height: 220px;
+	text-align: left;
+    border-width:10px;
+    border-style: outset;
+    
+}
+
+
+#texto_borde{
+	padding-top: 40px;
+}
+
+
+video{
+ width :500px;
+ height:300px;
+ padding-left: 450px;
+ }
+
+ iframe{
+ width :500px;
+ height:300px;
+ padding-left: 450px;
+ }
+
+ #animacion{
+   width:130px;
+   height:50px;
+   border:3px solid brown;
+   border-radius:22px;
+   background:linear-gradient(#337C93,#7B68EE,#F3F781);
+   padding:9px;
+   border-left: 90px;
+   margin-left: 600px;
+
+ }
+ 
+ #martillo {
+  animation:animacion_martillo 2s;
+  position:relative;
+}
+
+ #martillo {
+  animation:animacion_martillo 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s; 
+}
+
+@keyframes animacion_martillo {
+  0% {
+    transform: rotate(0deg);
+    top:0px
+  }
+  50% {
+    transform: rotate(90deg);
+    top:57px
+  }
+  100% {
+    transform: rotate(0deg);
+    top:0px
+  }
+}
+
+
+
+
+footer{
+	text-align:center;
+	padding: 50px 10px;
+	background:linear-gradient(#337C93,#7B68EE,#F3F781);
+}
+
+

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>BORDES</title>
+	<link rel="stylesheet" type="text/css" href="Css/Estilos.css"> <!-- Etiqueta link para relacionar con la hoja de estilo (css) -->
+	<link rel="shortcut icon" href="Imagenes/logo-julian.png"> <!--Etiqueta link rel con la propiedad icon para el icono de la pagina web-->
+
+</head>
+
+<body>
+
+	<header> <!--Encabezado de la pagina -->
+
+	<h1><center>APLICACIONES WEB l</center></h1> <!-- Titulo dentro del encabezado -->
+
+	<img src="Imagenes/universo.gif"> <!-- Etiqueta para añadir una imagen al encabezado de la pagina -->
+
+	</header>
+
+	<nav> <!--Etiqueta nav para la navegacion del usuario -->
+
+	<ul>
+		    <li> <a  href="Index.html">INICIO</a></li>
+			<li> <a  href="Tablas.html">TABLAS</a></li>
+			<li> <a  href="Formularios.html">FORMULARIOS</a> </li>
+			<li> <a  href="Bordes.html">BORDES</a></li>
+
+			<li> <a  href="Videos.html">VIDEOS</a>
+				<ul>
+					<li> <a  href="Animaciones.html">ANIMACIONES</a>
+					</li>
+				</ul>
+
+			</li>
+ 
+	</nav>
+
+
+	<section>
+
+		<h3 id="Subtitulo"><center>BORDE PUNTEADO</center></h3>
+
+
+		 <img src="Imagenes/html5.png" id="borde1" align="left" hspace="90" vspace="1"> 
+          <!-- alinea el texto a la derecha de la imagen vspace sube o baja la iamgen acorde al texto-->
+
+          <ul>
+          	
+          	<li id="texto_borde">
+
+          		Para representar la línea azul punteada que hay sobre esta imagen es necesario la declaraciones de un identificador sobre la imagen,En este ejemplo el selector CSS (hr{) hace referencia a todas las líneas (<"hr">) de la página. En el caso de querer hacer referencia únicamente a una, la etiqueta <"hr"> tendría que tener un id para poder identificarla (<"hr id="borde1">) y el selector CSS sería: #borde1.
+                
+          	</li>
+          	<br>
+
+          	<li>
+          		Existen dos formas para crear una línea separadora horizontal y una única forma para crear una línea separadora vertical.
+                Para crear una línea horizontal la forma fácil y rápida es utilizar la etiqueta <"hr">, que no se cierra y que crea una línea horizontal simple.
+
+                Esta etiqueta admite algunas características CSS como el grosor de la línea (border-width), la anchura (width), el color (border-color) o el tipo de línea (border-style).
+          	</li>
+     
+          </ul>
+
+          <br> <br>
+
+
+
+            <h3 id="Subtitulo"><center>BORDE CONTINUO</center></h3>
+
+             <img src="Imagenes/cssimagen.png" id="borde2" align="left" hspace="90" vspace="1"> 
+
+             <ul>
+             	<li>
+             		Para crear el borde continuo en esta imagen se utilizaron los siguientes comandos aplicados en la hoja
+             		de estilos CSS a continuacuon se presentan los comandos : 
+             	</li>
+             	<br>
+
+             	<li>
+             		width: 200px;
+             	</li>
+             	<br>
+
+             	<li>
+             		height: 220px;
+             	</li>
+             	<br>
+
+             	<li>
+             		text-align: left; 
+             	</li>
+             	<br>
+
+             	<li>
+             		border-width:10px;
+             	</li>
+             	<br>
+             	<li>
+             		 border-style: solid;
+             	</li>
+             	<br>
+
+             	<li>
+             		border-color: orange;
+             	</li>
+
+             </ul>
+
+
+             <h3 id="Subtitulo"><center>BORDE DISCONTINUO</center></h3>
+
+              <img src="Imagenes/javascript-logo.png" id="borde3" align="left" hspace="90" vspace="1"> 
+
+              <ul>
+              	<li id="texto_borde">
+              		Para conseguirlo simplemente tenemos que utilizar la propiedad de CSS "border-style", asignando el valor "dashed", crea una linea discontinua. Además, podemos definir otros valores al estilo de borde punteado, como puede ser el color del borde o el color.
+              	</li>
+              	<br>
+
+              		Propiedas que se pueden aplicar :
+
+              		<br>
+              		<br>
+              	
+
+              	<li>
+              		Border-style: double; border-width: 4px;
+              	</li>
+              	<br>
+
+              	<li>
+              		Border-style: groove; border-width: 4px;
+              	</li>
+
+              	<br>
+
+              	<li>
+              		Border-style: inset; border-width: 4px;
+              	</li>
+
+              </ul>
+
+
+               <h3 id="Subtitulo"><center>BORDE BAJO RELIEVE</center></h3>
+
+                <img src="Imagenes/frame.png" id="borde4" align="left" hspace="90" vspace="1"> 
+
+                <ul>
+                	<li>
+                		En el ejemplo se puede mostrar como cada uno de los bordes tiene un color diferente.
+                	</li>
+                	<br>
+
+                	Las reglas CSS necesarias para mostrar los colores anteriores son las siguientes:
+
+                	<br>
+                	<br>
+
+                	<li>
+                	borde_inset { <br>
+                     border-top-color: #CC0000; <br>
+                     border-right-color: blue;<br>
+                     border-bottom-color: #00FF00;<br>
+                     border-left-color: #CCC; <br>
+
+                     }
+                	</li>
+                	
+                </ul>
+
+                <br>
+
+
+                 <h3 id="Subtitulo"><center>BORDE SIMULA RELIEVE</center></h3>
+
+                <img src="Imagenes/web.png" id="borde5" align="left" hspace="90" vspace="1"> 
+
+                <ul>
+                	<li id="texto_borde">
+                		El estilo de los bordes sólo se puede indicar mediante alguna de las palabras reservadas definidas por CSS. Como el valor por defecto de esta propiedad es none, los elementos no muestran ningún borde visible a menos que se establezca explícitamente un estilo de borde.
+                	</li>
+
+                	<br>
+
+                	<li>
+                	 Los bordes más utilizados son solid y dashed, seguidos de double y dotted. Los estilos none y hidden son idénticos visualmente, pero se diferencian en la forma que los navegadores resuelven los conflictos entre los bordes de las celdas adyacentes en las tablas.
+
+                     Para establecer de forma simultánea los estilos de todos los bordes de una caja, es necesario utilizar la propiedad "shorthand" llamada border-style.
+                	</li>
+                	
+                </ul>
+
+                <br><br><br><br><br>
+                
+                
+                
+                
+                
+                
+                
+
+                <footer>
+
+		 <a href="https://web.whatsapp.com/"> <img id="img3" src="Imagenes/whatsap.png" align="center"> </a>
+		 <a href="https://www.facebook.com/"> <img id="img3" src="Imagenes/faceboock.png" align="center">
+
+
+	     <a  href="https://www.google.com/intl/es-419/gmail/about/">  Contactenos: jbolanos@unimayor.edu.co
+	        
+          </a> Telefono: 01800324178 
+
+          <br>
+                 © 2022 Aplicaciones-web-1.com <br>
+                   Popayan-Cauca
+
+
+
+     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</section>
+
+
+
+	
+
+</body>
+</html>
